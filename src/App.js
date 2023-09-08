@@ -1,24 +1,51 @@
 import logo from './logo.svg';
 import './App.css';
+import Main from './pages/Main';
+import Maintest from './pages/Maintest';
+import { Route, Routes } from 'react-router-dom';
+
+
+
 
 function App() {
+
+// 함수.변수쓰기 html금지
+
+  // const [] = ("");
+
+
+
+
+
+
+
+
+
+// 로드가 되고 실행되는 함수 (3줄)
+// useEffect(()=>{
+//   console.log(quizList)
+// },[quizList])
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+
+
+
+<Routes>
+  <Route path="/" element={<info />} />
+  <Route path="/Main" element={<Main/>} />
+  <Route path="/Maintest" element={<Maintest/>} />
+</Routes>
+
+
+
+
+
+
+
+
+
+    </>
+    
   );
 }
 

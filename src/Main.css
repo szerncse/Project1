@@ -1,0 +1,148 @@
+
+
+@charset "utf-8";
+*{margin: 0; padding: 0;}
+ul{list-style: none;}
+a{text-decoration: none; color: #000;}
+/* img{vertical-align: middle;} */
+bady{font-family: 'Noto Sans KR', sans-serif;}
+
+.heard{height: 180px; background-color: #D3C09D;}
+
+
+.review{width: 100%; 
+    background-color: #fff;
+     margin-top: 60px; 
+     position: relative;}
+.review-wrap{ 
+    color: #fff; 
+    max-width: 1400px;
+     height: 1024px; 
+     margin: 0 auto; }
+.review .title-area{display: flex; justify-content: space-between; 
+}
+.review-wrap p{font-size: 32px; font-weight: bold; }
+/*  */
+
+.review-page{max-width: 1200px; margin: 0 auto; }
+.review-page .review-content{ 
+    color: #000; 
+    display: flex; font-size: 15px; 
+    row-gap: 20px; gap: 20px; 
+    font-weight: bold;  
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin-bottom: 30px; }
+
+/* .review-content h2{padding-top: 10px; font-size: 20px;} */
+.review-page .review-content p{ 
+    display: flex; justify-content: space-between;
+    font-size: 15px;
+    font-weight: bold; 
+    gap:10px;
+    padding-top: 1px;
+    margin-bottom: 2px;
+    color: #FFFFFFcc;
+    color: #fddcf6;
+}
+
+.review-page .review-content .content-item{position: relative;
+    border: 1px solid #f1f1ef; 
+    flex-basis: 23%;
+    padding: 10px; 
+    padding-bottom: 50px; 
+    /* background-color: #F5F0E2;  */
+    font-size: 20px;
+    border-color: rgb(235, 231, 231);  
+    box-shadow: 4px 4px 4px -4px rgb(119, 112, 112); 
+}
+
+
+.faMessage{width: 30px; margin-top: 10px; margin-left: 5px;}
+.faBookmark{position: absolute; 
+    right:15px; 
+    margin-top: 10px;}
+
+/* @media screen and (max-width: 1200px){ 
+    flex-basis: 49%;
+  }
+@media screen and (max-width: 640px){
+    flex-basis: 100%;
+  } */
+
+.review-page .review-content .content-item p{position: sticky; justify-content: flex-start; align-items: center}
+
+.review-page .review-content .content-item p img{
+    width: 40px; height: 40px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    margin-bottom: 2px;
+    color: #f8c3e4; justify-content: space-around;
+
+}
+
+.review-page .review-content .content-item img{
+    /* margin-top: 30px; 여백만 만들기*/
+    width: 250px;height: 250px; 
+    display: flex; justify-content: center; 
+    border-color: rgb(235, 231, 231); 
+    box-shadow: 4px 4px 4px -4px rgb(119, 112, 112);}
+
+
+.review-page .review-content .content-item i:nth-child(4){position: absolute; right: -5px;}
+/* .review-page .review-content .content-item i:nth-child(4):hover{color: #500deb;} */
+.review-page .review-content .content-item a{color: #000; 
+       }
+
+       
+.logo{
+position: absolute;
+border: 1px solid #000;
+}
+
+
+.foot{width: 150px; height: 46px; margin: 0 auto;}
+.foot .foot-wrap{
+    /* border: 1px solid #D3C09D; 
+    text-align: center; 
+    background-color: #D3C09D; */
+    }
+.foot .foot-wrap button{
+    text-align: center; 
+    width: 150px;
+    height: 46px; 
+    background-color: #D3C09D; 
+    color: #fff;
+    border-color: #D3C09D;
+    
+}
+
+/* 모달 이미지 */
+.page{display: none;}
+.page-wrap{ 
+    opacity: 0.7;
+    position: fixed; left: 50%; 
+    transform: translate(-50%, -50%); top: 50%;
+
+    width: 100%; 
+    background-color: #D9D9D9; padding: 20%; 
+    height: 100%;}
+.poto{ 
+    
+    position: fixed; left: 50%; 
+    transform: translate(-50%, -50%); top: 50%;
+
+    width: 400px; max-height: 186px; 
+    border: 1px solid #ffffff;
+    padding: 15%; 
+    display: flex; gap: 10px; 
+    font-size: 20px;
+    margin: 0 auto; 
+    border-color: rgb(235, 231, 231);  
+    box-shadow: 4px 4px 4px -4px rgb(119, 112, 112); 
+    box-sizing: content-box;
+    background-color: #fff;
+}
+.poto img{width: 300px; }
+.poto .poto-review{}
+.poto .poto-name{border: 1px solid #fff; width: 270px; height: 250px; }
