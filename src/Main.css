@@ -42,23 +42,27 @@ bady{font-family: 'Noto Sans KR', sans-serif;}
     gap:10px;
     padding-top: 1px;
     margin-bottom: 2px;
-    color: #FFFFFFcc;
+    /* color: #e79ac5cc; */
     color: #fddcf6;
 }
 
+
+.review-page .review-content .content-item a{ font-size: 20px;}
 .review-page .review-content .content-item{position: relative;
     border: 1px solid #f1f1ef; 
     flex-basis: 23%;
     padding: 10px; 
     padding-bottom: 50px; 
     /* background-color: #F5F0E2;  */
-    font-size: 20px;
     border-color: rgb(235, 231, 231);  
     box-shadow: 4px 4px 4px -4px rgb(119, 112, 112); 
+    border-radius: 15px;
+    font-size: 18px;
 }
 
 
 .faMessage{width: 30px; margin-top: 10px; margin-left: 5px;}
+.faPaperPlane{ margin-left: 5px;}    
 .faBookmark{position: absolute; 
     right:15px; 
     margin-top: 10px;}
@@ -81,12 +85,19 @@ bady{font-family: 'Noto Sans KR', sans-serif;}
 
 }
 
+.review-page .review-content .content-item ul img{box-shadow: none;}
 .review-page .review-content .content-item img{
     /* margin-top: 30px; 여백만 만들기*/
     width: 250px;height: 250px; 
     display: flex; justify-content: center; 
     border-color: rgb(235, 231, 231); 
-    box-shadow: 4px 4px 4px -4px rgb(119, 112, 112);}
+    box-shadow: 4px 4px 4px -4px rgb(119, 112, 112);
+}
+
+.review-page .review-content .content-item ul{display: flex; justify-content: space-between;}
+.review-page .review-content .content-item ul li:nth-child(1) img{width: 24px; height: 24px;}
+/* 카메라 */
+.review-page .review-content .content-item ul li:nth-child(2) img{width: 100px; height: 20px;}
 
 
 .review-page .review-content .content-item i:nth-child(4){position: absolute; right: -5px;}
@@ -118,7 +129,7 @@ border: 1px solid #000;
 }
 
 /* 모달 이미지 */
-.page{display: none;}
+.page{}
 .page-wrap{ 
     opacity: 0.7;
     position: fixed; left: 50%; 
@@ -127,22 +138,32 @@ border: 1px solid #000;
     width: 100%; 
     background-color: #D9D9D9; padding: 20%; 
     height: 100%;}
-.poto{ 
+.poto{ position:relative;
     
     position: fixed; left: 50%; 
     transform: translate(-50%, -50%); top: 50%;
 
-    width: 400px; max-height: 186px; 
+    width: 800px; height: 500px; 
     border: 1px solid #ffffff;
-    padding: 15%; 
-    display: flex; gap: 10px; 
-    font-size: 20px;
+    /* padding: 8%;  */
+    display: flex; gap: 15px; 
+    font-size: 18px;
     margin: 0 auto; 
     border-color: rgb(235, 231, 231);  
     box-shadow: 4px 4px 4px -4px rgb(119, 112, 112); 
     box-sizing: content-box;
     background-color: #fff;
 }
-.poto img{width: 300px; }
+.poto button{right:1%; top: 2%;
+     position: absolute;
+     width: 35px; height: 35px;
+     color: #cc8a0f;
+     border: 1px solid #ffffff; 
+     border-radius: 30px;}
+    
+.poto button .poot{}     
+.poto img{width: 400px; height:500px }
 .poto .poto-review{}
-.poto .poto-name{border: 1px solid #fff; width: 270px; height: 250px; }
+.poto .poto-name{
+    border: 1px solid #ffffff; width: 370px; height: 450px;
+    margin-top: 50px; }

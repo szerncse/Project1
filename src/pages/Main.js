@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import './../Main.css';
 import Mainlist from '../Data/Mainlist';
-import { styled } from 'styled-components';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBookmark, faMessage} from "@fortawesome/free-regular-svg-icons";
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import {faBookmark, faMessage, faPaperPlane} from "@fortawesome/free-regular-svg-icons";
+import {  faHeart, faPaw, faXmark } from '@fortawesome/free-solid-svg-icons';
+import Detaillist from '../Data/Detaillist';
 
 
 
@@ -17,12 +18,21 @@ function Main() {
   //데이터 가져올떄 사용
   const [currentPage, setCurrentPage] = useState(1);
 
-  
+
+const [one, setOne] = useState(null);
+
+const [review , setReview] = useState(false);
+const [modalOpen, setModalOpen] = useState(false);
+
+const [review2 , setReview2] = useState(Detaillist);  
+
+
   return (
     <>
         
 
 <div className="heard"></div>
+
 <div className="review">  
   <div className="review-wrap">
     <div className="title-area">
@@ -33,15 +43,26 @@ function Main() {
       {
            Mainlist.filter(item => item.group <= currentPage).map((e,i)=>{
             return (
-            <div className="content-item" key={i}>
+            <div className="content-item " key={i}>
+              <ul>
+                <li><img src="images/camera.jpg" alt="카메라" /></li>
+                <li><span>instagram</span></li>
+                {/* <li><img src="images/instagram.jpg" alt="카메라" /></li> */}
+                <FontAwesomeIcon icon="fa-solid fa-camera" />
+                <li><FontAwesomeIcon icon={faPaperPlane} /></li>
+              </ul>
                <p><img src={e.rogo} alt="1"/>Puripuri</p>
-                <img src={e.img} alt="1"/>
+                <img onClick={()=>{
+                  setModalOpen(true);
+                  setOne(i);
+                }} src={e.img} alt="1"/>
                   <a href="/">
                   <FontAwesomeIcon icon={faHeart} color='red' />
                   <FontAwesomeIcon className='faMessage' icon={faMessage} />
+                  <FontAwesomeIcon className='faPaperPlane' icon={faPaperPlane} />
                   <FontAwesomeIcon className='faBookmark' icon={faBookmark} />
 
-                  <br/>{e.Text}</a>
+                  <br/></a>{e.Text}
                 </div>
                   )
                })
@@ -59,22 +80,32 @@ function Main() {
   </div>
 </div>
 
-<div className="page">
-
+{
+  modalOpen &&
+  <div className="page">
 <div className="page-wrap"></div>
   <div className="poto">
-      <div className="poto-review">
-          <img src="images/1.PNG" alt="1"/>
+    {/* {one} */}
+    <button onClick={()=>{
+      setModalOpen(false)
+    }}><FontAwesomeIcon icon={faXmark} /></button>
+      <>
+      <div className="poto-review">    
+      
+          <img src={Mainlist[one].img} alt="1"/>
       </div>
       <div className="poto-name">
-          <p>이름: 냥이</p><br/>
-          <p>나이: 15개월</p><br/>
-          <p>품종: 스코티쉬폴드</p><br/>
-          <p>성별: 여</p>
-          {/* <p>보호소기관: 대구...</p> */}
+          <p>{review2[one].Name}</p><br/>
+          <p>{review2[one].story}</p> 
       </div>
+      </>
+    
+
   </div>
 </div>
+
+}
+
 
 
     </>

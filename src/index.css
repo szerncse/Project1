@@ -2,9 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'KCC-eunyoung';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.content-item ul li span{font-family: 'KCC-eunyoung';
+font-size: 20px;}
+
+
+
 *{margin: 0; padding: 0; 
     font-family: 'Noto Sans KR', sans-serif;}
  ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 #root, html, body{width: 100%; }
-
