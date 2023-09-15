@@ -5,7 +5,7 @@
 ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 /* img{vertical-align: middle;} */
-bady{font-family: 'Noto Sans KR', sans-serif;}
+body{font-family: 'Noto Sans KR', sans-serif;}
 
 .heard{height: 180px; background-color: #D3C09D;}
 
@@ -15,7 +15,7 @@ bady{font-family: 'Noto Sans KR', sans-serif;}
      margin-top: 60px; 
      position: relative;}
 .review-wrap{ 
-    color: #fff; 
+    /* color: #fff;  */
     max-width: 1400px;
      height: 1024px; 
      margin: 0 auto; }
@@ -48,16 +48,18 @@ bady{font-family: 'Noto Sans KR', sans-serif;}
 
 
 .review-page .review-content .content-item a{ font-size: 20px;}
-.review-page .review-content .content-item{position: relative;
+.review-page .review-content .content-item{
+    position: relative;
     border: 1px solid #f1f1ef; 
     flex-basis: 23%;
     padding: 10px; 
     padding-bottom: 50px; 
     /* background-color: #F5F0E2;  */
-    border-color: rgb(235, 231, 231);  
+    /* border-color: rgb(235, 231, 231);   */
     box-shadow: 4px 4px 4px -4px rgb(119, 112, 112); 
     border-radius: 15px;
     font-size: 18px;
+    
 }
 
 
@@ -86,6 +88,10 @@ bady{font-family: 'Noto Sans KR', sans-serif;}
 }
 
 .review-page .review-content .content-item ul img{box-shadow: none;}
+.review-page .review-content .content-item img:hover{
+    /* border: 2px solid #ffffff; */
+    /* transform: scale(1.05); */
+}
 .review-page .review-content .content-item img{
     /* margin-top: 30px; 여백만 만들기*/
     width: 250px;height: 250px; 
@@ -154,6 +160,7 @@ border: 1px solid #000;
     box-sizing: content-box;
     background-color: #fff;
 }
+.poto button:hover{color: pink;}
 .poto button{right:1%; top: 2%;
      position: absolute;
      width: 35px; height: 35px;

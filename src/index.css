@@ -3,14 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'KCC-eunyoung';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/KCC-eunyoung-Regular.woff') format('woff');
-    font-weight: normal;
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
     font-style: normal;
 }
-.content-item ul li span{font-family: 'KCC-eunyoung';
-font-size: 20px;}
 
+.title{ font-family: 'Pretendard-Regular';}
 
 
 *{margin: 0; padding: 0; 
@@ -18,3 +17,5 @@ font-size: 20px;}
  ul{list-style: none;}
 a{text-decoration: none; color: #000;}
 #root, html, body{width: 100%; }
+
+html.fixed{width: 100%; height: 100%; overflow: hidden;}

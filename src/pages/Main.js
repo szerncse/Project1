@@ -10,8 +10,6 @@ import Detaillist from '../Data/Detaillist';
 
 
 
-
-
 function Main() {
   
   // const [review , setReview] = useState(Mainlist); 
@@ -31,7 +29,7 @@ const [review2 , setReview2] = useState(Detaillist);
     <>
         
 
-<div className="heard"></div>
+    <div className="heard"></div>
 
 <div className="review">  
   <div className="review-wrap">
@@ -46,7 +44,8 @@ const [review2 , setReview2] = useState(Detaillist);
             <div className="content-item " key={i}>
               <ul>
                 <li><img src="images/camera.jpg" alt="카메라" /></li>
-                <li><span>instagram</span></li>
+                {/* <li><span>instagram</span></li> */}
+                <li><span>PURIPURI STORY</span></li>
                 {/* <li><img src="images/instagram.jpg" alt="카메라" /></li> */}
                 <FontAwesomeIcon icon="fa-solid fa-camera" />
                 <li><FontAwesomeIcon icon={faPaperPlane} /></li>

@@ -111,7 +111,7 @@ const review = [
     {
         "rogo" : "./../images/K_01.png",
         "img" : "https://images.mypetlife.co.kr/content/uploads/2022/04/20101054/IMG_4564-1-edited-scaled.jpg",
-        "Text" : "#날 기다려주는 반려견",
+        "Text" : "#날 기다려주는 반려견 #입양스토리 #입양후기",
         "group" : 3
     },
     {
@@ -123,13 +123,13 @@ const review = [
     {
         "rogo" : "./../images/K_02.png",
         "img" : "https://www.sisain.co.kr/news/photo/202109/45623_82189_2148.jpg",
-        "Text" : "#새로온 친구랑 잘지내는중",
+        "Text" : "#새로온 친구랑 잘지내는중 #입양스토리 #입양후기",
         "group" : 3
     },
     {
         "rogo" : "./../images/K_01.png",
         "img" : "https://cdn.healthinnews.co.kr/news/photo/202203/28872_29657_461.jpg",
-        "Text" : "#말썽꾸러기",
+        "Text" : "#말썽꾸러기 #놀아달라는중 #입양후기",
         "group" : 3
     },
     {
