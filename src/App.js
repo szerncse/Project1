@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Main from './pages/Main';
-import Maintest from './pages/Maintest';
+import Mains from './pages/Mains';
 import { Route, Routes } from 'react-router-dom';
 
 
@@ -33,7 +33,7 @@ function App() {
 <Routes>
   <Route path="/" element={<info />} />
   <Route path="/Main" element={<Main/>} />
-  <Route path="/Maintest" element={<Maintest/>} />
+  <Route path="/Mains" element={<Mains/>} />
 </Routes>
 
 

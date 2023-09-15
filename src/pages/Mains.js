@@ -102,12 +102,9 @@ function Maintest() {
                 <p >{review2[one].Name}</p>
                 <p >{review2[one].story}</p> 
                 </div> */}
-                <div className="w-10 h-10 overflow-hidden ml-[20px] mt-[30px] mr-[10px]">
+                <div className="w-10 h-10 overflow-hidden ml-[10px] mt-[30px] mr-[10px]">
                   {
-                    <img src={review[one].rogo} alt="" />
-                  }
-                  {
-                    review[one].rogo
+                    <img src={review[one].rogo} alt="로고" />
                   }
                 </div>
                 <div className=" w-1/2 pr-[40px] ">
